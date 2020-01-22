@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="platinum">#EAEAEA</color>
+    <color name="softText">#C9C9C9</color>
+
+    <color name="naranja">#FF8075</color>
+    <color name="turquesa">#73FFD5</color>
+    <color name="masturquesa">#73FFD5</color>
+    <color name="white">#FFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+    <color name="gray">#2E2E2E</color>
+
+    <color name="graylight">#4B4747</color>
+
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#775DE8</color>
+</resources>

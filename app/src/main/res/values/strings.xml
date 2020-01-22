@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Economeat</string>
+
+
+    <string name="title1">Welcome</string>
+    <string name="title2">Improve yours Skills</string>
+    <string name="title3">Grow your audience</string>
+    <string name="description1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beeunchanged. It was popularised in the 1960s with the release of</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="SingUp">Aun no tienes cuenta?</string>
+    <string name="SingIn">Iniciar Sesion</string>
+    <string name="Saltar">Saltar</string>
+    <string name="correo">Correo electronico</string>
+    <string name="password">Password</string>
+    <string name="imagen">Revolucion</string>
+    <string name="register">Sing Up</string>
+
+
+    <string name="name">Name</string>
+    <string name="surnae">Surname</string>
+    <string name="numer">Phone</string>
+    <string name="username">Username</string>
+    <string name="otro">Something</string>
+    <string name="fechaNacimiento">Fecha de nacimiento</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="center">Center</string>
+    <string name="search">Search</string>
+    <string name="Repassword">Repetir password</string>
+    <string name="codephone">   Introduce el codigo que fue enviado a: </string>
+    <string name="code">Codigo</string>
+    <string name="dontRecivido">No recibi nungun codigo</string>
+    <string name="forgot">Olvide contraseña</string>
+
+</resources>
