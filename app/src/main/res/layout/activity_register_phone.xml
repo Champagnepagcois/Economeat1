@@ -21,7 +21,7 @@
         tools:layout_editor_absoluteX="9dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/id_Et_code"
         android:layout_width="215dp"
         android:layout_height="54dp"
         android:layout_marginStart="101dp"
@@ -47,14 +47,14 @@
         android:layout_width="216dp"
         android:layout_height="47dp"
         android:layout_marginStart="99dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="99dp"
         android:background="@drawable/button_rounded_border_red"
         android:text="Button"
         android:textColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/id_progressBar" />
 
     <TextView
         android:id="@+id/textView3"
@@ -70,4 +70,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Rephone" />
+
+    <ImageView
+        android:id="@+id/id_image_back"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_black" />
+
+    <TextView
+        android:id="@+id/id_Tv_cancelar"
+        android:layout_width="70dp"
+        android:layout_height="27dp"
+        android:text="@string/cancelar"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <ProgressBar
+        android:id="@+id/id_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="72dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="169dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_Et_code" />
 </androidx.constraintlayout.widget.ConstraintLayout>

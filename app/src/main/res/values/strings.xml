@@ -33,5 +33,11 @@
     <string name="code">Codigo</string>
     <string name="dontRecivido">No recibi nungun codigo</string>
     <string name="forgot">Olvide contraseña</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="nueroValido">Introduce un numero valido</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

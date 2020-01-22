@@ -8,21 +8,20 @@
 
 
     <EditText
-        android:id="@+id/editText_numer"
+        android:id="@+id/id_phone_register"
         android:layout_width="210dp"
         android:layout_height="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:digits="1234567890"
         android:gravity="center"
         android:hint="@string/numer"
         android:inputType="number"
-        android:digits="1234567890"
         android:maxLength="15"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_email" />
 
     <EditText
@@ -144,7 +143,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_numer" />
+        app:layout_constraintTop_toBottomOf="@+id/id_phone_register" />
 
     <EditText
         android:id="@+id/editText_password2"
@@ -162,6 +161,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextpassword1" />
+
+    <ImageView
+        android:id="@+id/id_image_back"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_black" />
+
+    <Spinner
+        android:id="@+id/id_spinner_countries"
+        android:layout_width="116dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/id_phone_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_Date" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

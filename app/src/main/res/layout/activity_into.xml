@@ -7,13 +7,25 @@
     tools:context=".Into">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_nav"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/nav_items"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="679dp"
-        android:background="@color/black">
+        tools:layout_editor_absoluteX="0dp">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-40dp"
+        tools:ignore="UnknownId">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
