@@ -22,9 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="55dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-40dp"
-        tools:ignore="UnknownId">
+        app:layout_constraintBottom_toTopOf="@+id/main_nav"
+        tools:ignore="UnknownId"
+        tools:layout_editor_absoluteX="0dp">
 
     </FrameLayout>
 

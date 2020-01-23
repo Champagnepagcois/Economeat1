@@ -1,4 +1,4 @@
-package com.marlon.economeat1;
+package com.marlon.economeat1.SingUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,16 +14,18 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
+import com.marlon.economeat1.CountryData;
+import com.marlon.economeat1.Into;
+import com.marlon.economeat1.MainActivity;
+import com.marlon.economeat1.R;
 
 import java.util.Calendar;
 
 public class Register1 extends AppCompatActivity {
 
 
-    private Spinner spinner;
-    private EditText editTextPhone;
 
+    private EditText editTextPhone,editTextEmail,editTextName,editTextSurname;
     private EditText date;
     DatePickerDialog datePickerDialog;
     Button button;
@@ -35,15 +37,13 @@ public class Register1 extends AppCompatActivity {
         setContentView(R.layout.activity_register1);
 
         button = (Button)findViewById(R.id.buttonNext1);
-
         imageViewBack = (ImageView) findViewById(R.id.id_image_back);
-
         imageViewBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent goHome = new Intent(Register1.this, MainActivity.class);
-                startActivity(goHome);
+                Intent gopassword = new Intent(Register1.this, Password.class);
+                startActivity(gopassword);
             }
         });
 
@@ -51,21 +51,8 @@ public class Register1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String code = CountryData.countryAreaCodes[spinner.getSelectedItemPosition()];
-                String numero = editTextPhone.getText().toString().trim();
-
-                if (numero.isEmpty()||numero.length()<10){
-                    editTextPhone.setError("Introduce un numero valido");
-                    editTextPhone.requestFocus();
-                    return;
-                }
-
-                String phonenumber = "+" + code + numero;
-
-
-                Intent goRegister1 = new Intent(Register1.this, RegisterPhone.class);
-                goRegister1.putExtra("phonenumber",phonenumber);
-                startActivity(goRegister1);
+                Intent into =new Intent(Register1.this, Into.class);
+                startActivity(into);
             }
         });
 
@@ -89,10 +76,11 @@ public class Register1 extends AppCompatActivity {
             }
         });
 
-        spinner = (Spinner) findViewById(R.id.id_spinner_countries);
-        spinner.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item, CountryData.countryNames));
-
         editTextPhone = (EditText) findViewById(R.id.id_phone_register);
+        editTextName = (EditText) findViewById(R.id.id_Et_name);
+        editTextSurname = (EditText) findViewById(R.id.id_Et_surname);
+        editTextEmail = (EditText) findViewById(R.id.id_Et_email);
+
 
     }
 

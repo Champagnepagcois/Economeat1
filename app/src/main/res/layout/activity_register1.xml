@@ -4,59 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register1">
+    tools:context=".SingUp.Register1">
 
 
-    <EditText
-        android:id="@+id/id_phone_register"
-        android:layout_width="210dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="60dp"
-        android:digits="1234567890"
-        android:gravity="center"
-        android:hint="@string/numer"
-        android:inputType="number"
-        android:maxLength="15"
-        android:textAlignment="center"
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:text="Registrate (2/2)"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/textView_name"
+        android:id="@+id/id_Et_name"
         android:layout_width="173dp"
         android:layout_height="54dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="108dp"
+        android:digits="abcdefghijklmnñoprstuvvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYáéíóúÁÉÍÓÚ"
         android:gravity="center"
-        android:singleLine="true"
         android:hint="@string/name"
         android:maxLength="15"
-        android:digits="abcdefghijklmnñoprstuvvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYáéíóúÁÉÍÓÚ"
+        android:singleLine="true"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView_surname"
+        app:layout_constraintEnd_toStartOf="@+id/id_Et_surname"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/textView_surname"
+        android:id="@+id/id_Et_surname"
         android:layout_width="176dp"
         android:layout_height="54dp"
-        android:layout_marginTop="30dp"
-        android:singleLine="true"
-        android:gravity="center"
+        android:layout_marginTop="108dp"
         android:digits="abcdefghijklmnñoprstuvvwxyz ABCDEFGHIJKLMNÑOPQRSTUVWXYáéíóúÁÉÍÓÚ"
+        android:gravity="center"
         android:hint="@string/surnae"
         android:maxLength="16"
+        android:singleLine="true"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView_name"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/id_Et_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
         android:id="@+id/buttonNext1"
@@ -64,8 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/next"
         android:background="@drawable/button_rounded_border"
+        android:text="@string/hecho"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -74,7 +70,7 @@
         android:id="@+id/ET_Date"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="41dp"
         android:clickable="true"
         android:focusable="false"
         android:hint="@string/fechaNacimiento"
@@ -86,81 +82,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 
     <EditText
-        android:id="@+id/editText_email"
+        android:id="@+id/id_Et_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:gravity="center"
         android:hint="Correo"
-        android:singleLine="true"
         android:maxLength="30"
+        android:singleLine="true"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ET_Date" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginEnd="83dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sin" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginEnd="155dp"
-        android:text="@string/register"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <EditText
-        android:id="@+id/editTextpassword1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="99dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/password"
-        android:inputType="textVisiblePassword"
-        android:maxLength="15"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_phone_register" />
-
-    <EditText
-        android:id="@+id/editText_password2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="99dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/Repassword"
-        android:inputType="textPassword"
-        android:maxLength="15"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextpassword1" />
 
     <ImageView
         android:id="@+id/id_image_back"
@@ -173,16 +111,58 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back_black" />
 
-    <Spinner
-        android:id="@+id/id_spinner_countries"
-        android:layout_width="116dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/id_phone_register"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="66dp"
+        android:gravity="center"
+        android:text="Bienvenido a Economeat"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ET_Date" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="101dp"
+        android:gravity="center"
+        android:text="Completa los siguientes campos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hombre"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_Et_name" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="60dp"
+        android:text="Mujer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/id_Et_surname" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Into"></activity>
+        <activity android:name=".SingUp.Phone"></activity>
+        <activity android:name=".SingUp.Password" />
+        <activity android:name=".Into" />
         <activity android:name=".ForgottenPassword" />
-        <activity android:name=".RegisterPhone" />
-        <activity android:name=".Register1" />
+        <activity android:name=".SingUp.RegisterPhone" />
+        <activity android:name=".SingUp.Register1" />
         <activity android:name=".MainActivity" />
         <activity android:name=".actividades.SplashActivity">
             <intent-filter>

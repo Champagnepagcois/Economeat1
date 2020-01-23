@@ -1,4 +1,4 @@
-package com.marlon.economeat1;
+package com.marlon.economeat1.SingUp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +21,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.marlon.economeat1.Into;
+import com.marlon.economeat1.R;
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,9 +33,9 @@ public class RegisterPhone extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
     private EditText editTextCode;
+    TextView textViewphone;
     Button buttonFinish;
     ImageView imageViewBack;
-    TextView textViewCancelar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,10 @@ public class RegisterPhone extends AppCompatActivity {
 
         progressBar = findViewById(R.id.id_progressBar);
         editTextCode = findViewById(R.id.id_Et_code);
+        textViewphone = (TextView)findViewById(R.id.id_Tv_number1);
 
+        String number = getIntent().getStringExtra("number");
+        textViewphone.setText(number);
         String phonenumber = getIntent().getStringExtra("phonenumber");
         sendVerificationCode(phonenumber);
 
@@ -52,7 +57,22 @@ public class RegisterPhone extends AppCompatActivity {
 /* ---------------------------------------------------------------*/
 
 
-    buttonFinish = (Button) findViewById(R.id.button_Rephone);
+
+        /*-----------------Parte de intent para home and back---------------------------*/
+
+
+        imageViewBack = (ImageView) findViewById(R.id.id_image_back);
+
+        imageViewBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goback = new Intent(RegisterPhone.this, Phone.class);
+                startActivity(goback);
+            }
+        });
+
+        buttonFinish = (Button) findViewById(R.id.button_Rephone);
         buttonFinish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,36 +87,10 @@ public class RegisterPhone extends AppCompatActivity {
                 }
                 verifyCode(code);
 
-
-                Intent login = new Intent(RegisterPhone.this, Into.class);
-                startActivity(login);
             }
         });
 
 
-        /*-----------------Parte de intent para home and back---------------------------*/
-
-
-        imageViewBack = (ImageView) findViewById(R.id.id_image_back);
-
-        imageViewBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent goHome = new Intent(RegisterPhone.this, Register1.class);
-                startActivity(goHome);
-            }
-        });
-        textViewCancelar = (TextView) findViewById(R.id.id_Tv_cancelar);
-
-        textViewCancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent goHome = new Intent(RegisterPhone.this, Register1.class);
-                startActivity(goHome);
-            }
-        });
 
     }
     /*-----------------------Firebase--------------------------*/
@@ -113,7 +107,7 @@ public class RegisterPhone extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            Intent intent = new Intent(RegisterPhone.this, Into.class);
+                            Intent intent = new Intent(RegisterPhone.this, Password.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
                             startActivity(intent);

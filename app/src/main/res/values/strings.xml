@@ -29,14 +29,14 @@
     <string name="center">Center</string>
     <string name="search">Search</string>
     <string name="Repassword">Repetir password</string>
-    <string name="codephone">   Introduce el codigo que fue enviado a: </string>
+    <string name="codephone">   Introduce el codigo que fue enviado al: </string>
     <string name="code">Codigo</string>
     <string name="dontRecivido">No recibi nungun codigo</string>
     <string name="forgot">Olvide contraseña</string>
     <string name="cancelar">Cancelar</string>
 
     <string name="nueroValido">Introduce un numero valido</string>
-
+    <string name="hecho">Hecho</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
