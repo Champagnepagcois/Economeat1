@@ -53,11 +53,6 @@ public class RegisterPhone extends AppCompatActivity {
         String phonenumber = getIntent().getStringExtra("phonenumber");
         sendVerificationCode(phonenumber);
 
-
-/* ---------------------------------------------------------------*/
-
-
-
         /*-----------------Parte de intent para home and back---------------------------*/
 
 
@@ -89,8 +84,6 @@ public class RegisterPhone extends AppCompatActivity {
 
             }
         });
-
-
 
     }
     /*-----------------------Firebase--------------------------*/

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.marlon.economeat1.SingUp.Phone;
 import com.marlon.economeat1.SingUp.Register1;
@@ -33,16 +34,23 @@ public class MainActivity extends AppCompatActivity {
         textViewRe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Rephone = new Intent (MainActivity.this, Phone.class);
-                startActivity(Rephone);
+                Intent rephone = new Intent (MainActivity.this, Phone.class);
+                startActivity(rephone);
+                Toast.makeText(getApplicationContext(), "does'nt works", Toast.LENGTH_SHORT).show();
             }
         });
 
         textViewFo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Forgot = new Intent(MainActivity.this,ForgottenPassword.class);
-                startActivity(Forgot);
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+                sendIntent.setType("text/plain");
+                sendIntent.setPackage("com.whatsapp");
+                startActivity(sendIntent);
+
             }
         });
         buttonLogin.setOnClickListener(new View.OnClickListener() {

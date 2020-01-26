@@ -25,7 +25,6 @@
     <string name="otro">Something</string>
     <string name="fechaNacimiento">Fecha de nacimiento</string>
     <string name="home">Home</string>
-    <string name="profile">Profile</string>
     <string name="center">Center</string>
     <string name="search">Search</string>
     <string name="Repassword">Repetir password</string>
@@ -43,5 +42,7 @@
     <string name="drawerOpen">open</string>
     <string name="drawereClose">close</string>
     <string name="drawerClose">close</string>
+    <string name="profile">Perfil</string>
+    <style name="back">Back</style>
 
 </resources>
