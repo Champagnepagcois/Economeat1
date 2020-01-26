@@ -6,12 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/graylight"
-        app:menu="@menu/nav_items"/>
-
     <TextView
         android:layout_marginTop="55dp"
         android:layout_width="match_parent"

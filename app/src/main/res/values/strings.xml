@@ -39,5 +39,9 @@
     <string name="hecho">Hecho</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hola">hola11111</string>
+    <string name="drawerOpen">open</string>
+    <string name="drawereClose">close</string>
+    <string name="drawerClose">close</string>
 
 </resources>
